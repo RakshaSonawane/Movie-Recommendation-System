@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendation Chat</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Movie Recommendation Chat</h1>
+            <p>Tell me about your movie preferences and I'll recommend films you might enjoy!</p>
+        </header>
+        
+        <div class="chat-container">
+            <div id="chat-history">
+                <div class="message system">
+                    Hello! I'm your movie recommendation assistant. What kind of movies do you like?
+                </div>
+            </div>
+            
+            <div class="input-container">
+                <input type="text" id="user-input" placeholder="Type your message here..." autocomplete="off">
+                <button id="send-button">Send</button>
+                <button id="reset-button">Reset Preferences</button>
+            </div>
+        </div>
+        
+        <div class="recommendations-container">
+            <h2>Recommendations</h2>
+            <div id="movie-recommendations">
+                <p>Your recommendations will appear here once we chat about your preferences.</p>
+            </div>
+        </div>
+        
+        <div class="tips">
+            <h3>Tips</h3>
+            <ul>
+                <li>Tell me what genres you enjoy (action, comedy, drama, etc.)</li>
+                <li>Mention specific movies you like</li>
+                <li>Specify a time period (e.g., movies from 2010-2020)</li>
+                <li>Tell me if you prefer recent or classic movies</li>
+            </ul>
+        </div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
