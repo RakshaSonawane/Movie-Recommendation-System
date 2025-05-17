@@ -8,5 +8,17 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Generate a random user ID (in a real app, use proper authentication)
     const userId = 'user_' + Math.random().toString(36).substring(2, 15);
-    
+    // Function to add message to chat history
+    function addMessage(message, type) {
+        const messageElement = document.createElement('div');
+        messageElement.className = `message ${type}`;
+        
+        // Process newlines in the message
+        const formattedMessage = message.replace(/\n/g, '<br>');
+        messageElement.innerHTML = formattedMessage;
+        
+        chatHistory.appendChild(messageElement);
+        chatHistory.scrollTop = chatHistory.scrollHeight;
+    }
+
     });
