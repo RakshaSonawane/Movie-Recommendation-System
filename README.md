@@ -125,10 +125,3 @@ The recommendation algorithm is defined in `recommender.py`. You can modify:
 - `get_recommendations()`: How movies are scored and selected
 - `generate_response()`: How responses are formatted
 
-## Technical Details
-
-- **Backend**: Flask (Python)
-- **Frontend**: HTML, CSS, JavaScript (Vanilla)
-- **Data Processing**: Pandas, NumPy
-- **Natural Language Processing**: Regular expressions for pattern matching
-
