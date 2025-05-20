@@ -180,8 +180,8 @@ class MovieRecommender:
             response = "Hello! I'm your movie recommendation assistant. "
         else:
             response = ""
-        
-        # Add preference acknowledgment
+
+        #Add Referenece acknowledgement
         if any(term in message.lower() for term in ['hi', 'hello', 'hey', 'start']):
             response += "How can I help you find a movie today? Tell me what kinds of movies you enjoy."
             return response
