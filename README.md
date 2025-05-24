@@ -85,7 +85,7 @@ The application will start and be available at `http://127.0.0.1:5000/`
 - "I want to see something with comedy and romance"
 
 ## Project Structure
-
+This is required Project file structure
 ```
 movie-recommendation-system/
 ├── app.py                 # Main Flask application
