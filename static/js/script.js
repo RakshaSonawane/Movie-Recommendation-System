@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', function() {
             sendMessage(message);
         }
     });
-    
+    // Adding another event listener
     userInput.addEventListener('keypress', function(event) {
         if (event.key === 'Enter') {
             const message = userInput.value.trim();
