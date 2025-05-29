@@ -18,7 +18,7 @@ rec_engine = recommender.MovieRecommender(movie_data)
 user_contexts = {}
 
 @app.route('/')
-def index():
+def index():   #for main page
     """Render the main page"""
     return render_template('index.html')
 
