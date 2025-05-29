@@ -224,7 +224,7 @@ class MovieRecommender:
         response = self.generate_response(message, context, recommendations)
         
         return response, recommendations
-
+#function for creating sample dataset
 def create_sample_dataset():
     """Create a sample movie dataset if none exists"""
     data = {
