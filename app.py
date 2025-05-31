@@ -42,7 +42,7 @@ def chat():
         'response': response,
         'recommendations': recommendations
     })
-
+#reseting the context
 @app.route('/reset', methods=['POST'])
 def reset_context(): #resets the context
     """Reset user preferences"""
