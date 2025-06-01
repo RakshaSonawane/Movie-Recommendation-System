@@ -53,6 +53,6 @@ def reset_context(): #resets the context
         user_contexts[user_id] = recommender.UserContext()
     
     return jsonify({'status': 'success'})
-
+#main code
 if __name__ == '__main__':
     app.run(debug=True)
