@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, jsonify
 import recommender
 import os
 import pandas as pd
-
+#flask activate
 app = Flask(__name__)
 
 # Load movie data
