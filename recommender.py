@@ -1,4 +1,4 @@
-#MOVIE RECCOMENDATION SYSTEM
+#MOVIE RECOMMENDATION SYSTEM
 
 import pandas as pd
 import numpy as np
