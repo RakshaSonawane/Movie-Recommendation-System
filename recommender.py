@@ -43,7 +43,7 @@ class UserContext:
                     
         if year_range is not None:
             self.min_year, self.max_year = year_range
-#class MovieRecommender
+#class Movie Recommender
 class MovieRecommender:
     """Core recommendation engine"""
     def __init__(self, movie_data):
