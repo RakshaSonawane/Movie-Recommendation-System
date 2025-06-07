@@ -210,7 +210,7 @@ class MovieRecommender:
             response += "\n\nWhat do you think of these recommendations? Or would you like to explore something different?"
         
         return response
-
+    # function for process message
     def process_message(self, message, context):
         """Process user message and return response with recommendations"""
         # Update conversation history
