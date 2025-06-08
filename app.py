@@ -44,9 +44,9 @@ def chat():
         'response': response,
         'recommendations': recommendations
     })
-#reseting the context
+
 @app.route('/reset', methods=['POST'])
-def reset_context(): #resets the context
+def reset_context(): 
     """Reset user preferences"""
     data = request.json
     user_id = data.get('user_id', 'default_user')
