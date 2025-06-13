@@ -37,7 +37,6 @@ def chat():
     
     user_context = user_contexts[user_id]
     
-    # Generate response
     response, recommendations = rec_engine.process_message(message, user_context)
     
     return jsonify({
