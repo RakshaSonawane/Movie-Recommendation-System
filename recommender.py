@@ -107,7 +107,6 @@ class MovieRecommender:
         # Extract mentioned movies
         movie_matches = self.patterns['movie_mention'].findall(message)
         for movie_name in movie_matches:
-            # Try to find the movie in our database
             possible_matches = self.movies[self.movies['title'].str.contains(movie_name, case=False)]
             if not possible_matches.empty:
                 context.update_preferences(movie_id=possible_matches.iloc[0]['movie_id'], like=True)
